@@ -1,0 +1,14 @@
+name: Actions Wokflow
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple JS action
+        uses: actions/hello-world-javascript-action@v1
+        with:
+            who-to-greet: Kimbo
+      - name: Log greetin time
+        run: echo "${{ steps.greet.outputs.time }}"
