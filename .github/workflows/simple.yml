@@ -25,3 +25,14 @@ jobs:
           print
           (platform.processor())
         shell: python
+  runs-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: directory powershell
+        run: get-location
+      - name: directory bash
+        run: pwd    
+        shell: bash 
+      - name: show OS details
+        run: systeminfo
+        
