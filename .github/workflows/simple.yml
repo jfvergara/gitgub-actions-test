@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-      - run: echo "Hello World, this is my first github Workflow"
+        run: echo "Hello World, this is my first github Workflow"
       - name: multiline script
-      - run: |
+        run: |
           node -v
           npm -v
