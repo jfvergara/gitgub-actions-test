@@ -15,3 +15,5 @@ jobs:
           cat /etc/os-release
       - name: show RAM
         run: free -h
+      - name: show IP
+        run: ifconfig
