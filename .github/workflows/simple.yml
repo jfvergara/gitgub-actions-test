@@ -19,3 +19,9 @@ jobs:
         run: ifconfig
       - name: environment variables
         run: printenv
+      - name: python command
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python
