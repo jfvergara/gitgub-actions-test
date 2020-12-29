@@ -17,3 +17,5 @@ jobs:
         run: free -h
       - name: show IP
         run: ifconfig
+      - name: environment variables
+        run: printenv
