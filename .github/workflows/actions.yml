@@ -22,6 +22,6 @@ jobs:
       - name: Simple JS action
         uses: actions/hello-world-javascript-action@main
         with:
-            who-to-greet: Kimbo
+            who-to-greet: Kimboo
       - name: Log greeting time
         run: echo "${{ steps.greet.outputs.time }}"
