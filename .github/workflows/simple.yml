@@ -29,6 +29,8 @@ jobs:
     runs-on: windows-latest
     needs: [run-shell-command]
     steps:
+      - name: echo
+        run: echo "Hello this is happening on powershell"
       - name: directory powershell
         run: get-location
       - name: directory bash
