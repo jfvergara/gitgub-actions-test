@@ -1,8 +1,10 @@
 name: Actions Wokflow
 
 on:
-  schedule:
-    - cron: "* * * * *"
+
+  # schedule:
+  #   - cron: "0/5 * * * *"
+  #   - cron: "* * * * *"
   # push:
   pull_request:
     types: [closed, assigned, opened, reopened]
