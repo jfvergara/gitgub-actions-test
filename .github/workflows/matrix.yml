@@ -12,4 +12,6 @@ jobs:
           node-version: 6
       - name: Log node version
         run: node -v
+      - name: dotnet version default
+        run: dotnet --version
 
