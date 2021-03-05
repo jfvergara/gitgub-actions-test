@@ -3,7 +3,7 @@ on: push
 
 jobs:
   docker-steps:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     container:
       image: node:10.18.0-jessie
     steps:
